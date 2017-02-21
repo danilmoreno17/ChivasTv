@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:weightSum="1">
+
+
+    <ImageView
+        android:id="@+id/billboard"
+        android:layout_width="126dp"
+        android:src="@drawable/dummy_pic"
+        android:contentDescription="demo"
+        android:layout_centerInParent="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitCenter"
+        android:layout_height="140dp"
+        android:layout_alignParentLeft="true" />
+
+    <tqmgpartners.com.chivastv.Utils.MyTextview
+    android:text="prueba"
+    android:layout_width="112dp"
+    android:id="@+id/categories"
+    android:textAlignment="center"
+    android:minLines="1"
+    android:maxLines="2"
+    android:visibility="visible"
+    android:layout_height="40dp"
+    android:textColor="@color/white"
+    android:textSize="12sp"
+    android:layout_below="@+id/imPromoImage"
+    android:layout_alignParentStart="true" />
+
+
+</LinearLayout>

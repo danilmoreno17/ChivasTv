@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#1f1f1f</color>
+    <color name="colorAccent">#FF4081</color>
+    
+    <color name="BG_Blue">#002856</color>
+    <color name="BDR_blue">#19b5fe</color>
+    <color name="BG_01">#202020</color>
+    <color name="BG_02">#505050</color>
+    <color name="colorSeond">#e3e3e3</color>
+
+    <color name="bgBLUE">#002856</color>
+    <color name="navBLUE">#00142b</color>
+    <color name="bdrBLACK">#000</color>
+    <color name="btnRED">#ff4338</color>
+    <color name="btnBLUE">#002856</color>
+    <color name="btnGREEN">#39b54a</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>

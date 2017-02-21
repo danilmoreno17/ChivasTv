@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imService"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/txtDefinition"
+                android:layout_weight="0.3"
+                android:contentDescription="images"
+                android:src="@drawable/ic_amazon_logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".70"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/txtService"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imService"
+                android:layout_alignRight="@+id/imService"
+                android:layout_weight="0.2"
+                android:text="@string/strDefault"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtDefinition"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/txtService"
+                android:layout_toRightOf="@+id/txtService"
+                android:layout_weight="0.3333"
+                android:text="@string/strDefault"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/txtDefinition"
+                android:layout_weight="0.3333"
+                android:text="@string/strDefault"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSerWatch"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/txtPrice"
+                android:layout_weight="0.3333"
+                android:background="@color/BDR_blue"
+                android:padding="15dp"
+                android:text="@string/strWatch"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#19B5FE"/>
+
+</LinearLayout>
