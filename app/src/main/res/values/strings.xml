@@ -1,8 +1,6 @@
 <resources>
     <string name="app_name">ChivasTv</string>
     <string name="App_Name">CHIVASTV</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="strLogin">Login</string>
     <string name="strSignUp">Not a member? Sign up now</string>
     <string name="strEmail">Email</string>
@@ -14,6 +12,7 @@
     <string name="strPPV">PPV</string>
     <string name="strVideos">Videos</string>
     <string name="navigation_drawer_open">OPEN</string>
-    <string name="navigation_drawer_close">CLOSE</string>
-
+    <string name="navigation_drawer_close">Close</string>
+    <string name="strPurchaseDialog1">To purchase this event \ngo to</string>
+    <string name="strPurchaseDialog2">PPV1 $1.25 MXN \n*PPV1 y PPV2 $1.55 MXN \n*All Games $1.75 MXN Monthly</string>
 </resources>

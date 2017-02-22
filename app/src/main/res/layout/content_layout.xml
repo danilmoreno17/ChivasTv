@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@drawable/bg_img"
     android:padding="0dp"
     tools:context="tqmgpartners.com.chivastv.act_Browse">
     <include layout="@layout/toolbarmain">

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/act_sipnosis"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/bg_img"
+    tools:context="tqmgpartners.com.chivastv.act_Sipnosis">
+    <include layout="@layout/toolbarback">
+    </include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".60"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".35"
+                android:gravity="center"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="360dp">
+                    <ImageView
+                        android:id="@+id/ib_posterSipnosis"
+                        android:layout_width="200dp"
+                        android:layout_height="360dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/dummy_pic"/>
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_play"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/imageView" />
+                </RelativeLayout>
+                <tqmgpartners.com.chivastv.Utils.MyButton
+                    android:id="@+id/btn_Watch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/button_selector"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/strWatch"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".65"
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
+
+                <tqmgpartners.com.chivastv.Utils.MyTitleTextView
+                    android:id="@+id/tv_titleSipnosis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strDefault"
+                    android:textColor="@color/white"
+                    android:textSize="40dp" />
+                <tqmgpartners.com.chivastv.Utils.MyTextview
+                    android:id="@+id/lblPG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$15.99"
+                    android:textSize="24dp"
+                    android:textColor="@color/white"/>
+                <tqmgpartners.com.chivastv.Utils.MyTextview
+                    android:id="@+id/tv_categoriesSipnosis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="TextView"
+                    android:textColor="@color/colorSeond"
+                    android:textSize="24dp"
+                    android:textStyle="normal"
+                    android:visibility="gone"/>
+
+
+                <tqmgpartners.com.chivastv.Utils.MyTextview
+                    android:id="@+id/tv_actorsSipnosis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="TextView"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    android:textSize="12dp" />
+
+                <tqmgpartners.com.chivastv.Utils.MyTextview
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sinopsis"
+                    android:textColor="@color/white"
+                    android:textSize="35dp"
+                    android:textStyle="normal|bold" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".50"
+                    android:fadeScrollbars="false"
+                    android:scrollbarThumbVertical="@drawable/custom_scrollbar">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <tqmgpartners.com.chivastv.Utils.MyTextview
+                            android:id="@+id/tv_descriptionSipnosis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="20dp"
+                            android:text="TextView"
+                            android:textColor="@color/white"
+                            android:textSize="24dp" />
+                    </LinearLayout>
+                </ScrollView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".40"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <tqmgpartners.com.chivastv.Utils.MyTitleTextView
+
+                    android:textColor="@color/white"
+                    android:id="@+id/txt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strRelatedVideos"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rec_RelatedVideos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

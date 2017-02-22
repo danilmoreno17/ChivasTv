@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     
-    <tqmgpartners.com.chivastv.Utils.MyTextview
+    <tqmgpartners.com.chivastv.Utils.MyTitleTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/App_Name"

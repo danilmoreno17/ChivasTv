@@ -8,17 +8,17 @@ android:weightSum="1">
 
     <ImageView
         android:id="@+id/billboard"
-        android:layout_width="126dp"
+        android:layout_width="160dp"
         android:src="@drawable/dummy_pic"
         android:contentDescription="demo"
         android:layout_centerInParent="false"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:scaleType="fitCenter"
-        android:layout_height="140dp"
+        android:layout_height="175dp"
         android:layout_alignParentLeft="true" />
 
-    <tqmgpartners.com.chivastv.Utils.MyTextview
+    <tqmgpartners.com.chivastv.Utils.MyTitleTextView
     android:text="prueba"
     android:layout_width="112dp"
     android:id="@+id/categories"

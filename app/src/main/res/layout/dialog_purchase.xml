@@ -19,8 +19,9 @@
         android:textColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Para comprar este evento \nvaya a"/>
-    <tqmgpartners.com.chivastv.Utils.MyTextview
+        android:text="@string/strPurchaseDialog1"/>
+    <tqmgpartners.com.chivastv.Utils.MyTitleTextView
+        android:id="@+id/tv_openBrowser"
         android:textStyle="bold"
         android:textSize="25dp"
         android:gravity="center"
@@ -34,5 +35,5 @@
         android:textColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="*PPV1 $1.25 MXN \n*PPV1 y PPV2 $1.55 MXN \n*Todos los juegos $1.75 MXN mensualmente"/>
+        android:text="@string/strPurchaseDialog2"/>
 </LinearLayout>

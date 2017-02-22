@@ -6,17 +6,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="1"
-    android:background="@color/colorPrimaryDark"
+    android:background="@drawable/bg_img"
     tools:context="tqmgpartners.com.chivastv.act_Sipnosis">
-    <include layout="@layout/toolbarback">
-    </include>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/shape"
         android:orientation="vertical"
         android:paddingTop="20dp"
         android:weightSum="1">
@@ -32,14 +30,24 @@
                 android:layout_height="match_parent"
                 android:layout_weight=".35"
                 android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/ib_posterSipnosis"
+                <RelativeLayout
                     android:layout_width="110dp"
-                    android:layout_height="180dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/dummy_pic"/>
+                    android:layout_height="180dp">
+                    <ImageView
+                        android:id="@+id/ib_posterSipnosis"
+                        android:layout_width="110dp"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/dummy_pic"/>
 
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_play"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/imageView" />
+                </RelativeLayout>
                 <tqmgpartners.com.chivastv.Utils.MyButton
                     android:id="@+id/btn_Watch"
                     android:layout_width="match_parent"
@@ -60,7 +68,7 @@
                 android:orientation="vertical"
                 android:paddingLeft="5dp">
 
-                <tqmgpartners.com.chivastv.Utils.MyTextview
+                <tqmgpartners.com.chivastv.Utils.MyTitleTextView
                     android:id="@+id/tv_titleSipnosis"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -142,7 +150,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <tqmgpartners.com.chivastv.Utils.MyTextview
+                <tqmgpartners.com.chivastv.Utils.MyTitleTextView
 
                     android:textColor="@color/white"
                     android:id="@+id/txt_title"
@@ -160,5 +168,8 @@
                 android:scrollbars="vertical"/>
         </LinearLayout>
     </LinearLayout>
+
+    <include layout="@layout/toolbarback">
+    </include>
 
 </LinearLayout>

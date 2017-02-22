@@ -28,6 +28,7 @@ import tqmgpartners.com.chivastv.Adapters.adaPPVAdapter;
 import tqmgpartners.com.chivastv.ChivasTv;
 import tqmgpartners.com.chivastv.Entities.clsEditorial;
 import tqmgpartners.com.chivastv.R;
+import tqmgpartners.com.chivastv.Utils.MyTitleTextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -122,10 +123,14 @@ public class frg_PPV extends Fragment {
             /*---------------------------------------------------------------------------------------------------*/
             for( int i = 0; i < 3; i++ )
             {
-                TextView textView = new TextView(rootView.getContext());
+                MyTitleTextView textView = new MyTitleTextView(rootView.getContext());
                 textView.setText(arrTitles.get(i).toString());
                 textView.setTextColor(Color.parseColor("#FFFFFF"));
                 textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 26);
+
+                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+                params.setMargins(10,40,10,40);
+                textView.setLayoutParams(params);
                 _layChannel.addView(textView);
 
                 RecyclerView rec = new RecyclerView(rootView.getContext());

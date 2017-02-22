@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -57,6 +58,12 @@ public class act_Sipnosis extends AppCompatActivity {
         Intent intReceiver = getIntent();
         contenido = (clsEditorial) intReceiver.getSerializableExtra("EDITORIAL");
         Picasso.with(this).load(contenido.get_strPromoImages()).into(ib_posterSipnosis);
+        ib_posterSipnosis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openStream();
+            }
+        });
         tv_titleSipnosis.setText(contenido.get_strTitle());
         tv_ActorsSipnosis.setText(contenido.get_strActors());
         tv_categoriesSipnosis.setText(contenido.get_strCategories());
@@ -72,23 +79,27 @@ public class act_Sipnosis extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 LayoutInflater inflater = context.getLayoutInflater();
-
+                View rootview = inflater.inflate(R.layout.dialog_purchase, null);
+                TextView tv_openBrowser = (TextView)rootview.findViewById(R.id.tv_openBrowser);
+                tv_openBrowser.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        OpenBrowser();
+                    }
+                });
                 new AlertDialog.Builder(context)
-                        .setView(inflater.inflate(R.layout.dialog_purchase, null))
-                        .setCancelable(false)
-                        .setPositiveButton("Si", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-
-                            }
-                        })
-                        .setNegativeButton("No",  new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                            }
-                        }).show();
-                //Intent intent = new Intent(v.getContext(), act_Services.class);
-                //intent.putExtra("EDITORIAL",contenido);
-                //startActivity(intent);
+                        .setView(rootview)
+                        .setCancelable(true)
+                        .show();
             }
         });
+    }
+    private void openStream(){
+        Intent intent = new Intent(this, StreamActivity.class);
+        startActivity(intent);
+    }
+    private void OpenBrowser(){
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.chivastv.mx/"));
+        startActivity(browserIntent);
     }
 }

@@ -9,6 +9,10 @@
             android:title="@string/strPPV"/>
         <item
             android:id="@+id/menu_seccion_3"
-            android:title="@string/strVideos"/>
+            android:title="@string/strVideos">
+        </item>
+        <item
+            android:id="@+id/menu_seccion_4"
+            android:title="@string/navigation_drawer_close"/>
     </group>
 </menu>

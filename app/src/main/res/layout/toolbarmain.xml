@@ -11,17 +11,19 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/BG_Blue"
 
         >
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="?attr/actionBarSize"
             android:background="@drawable/ic_bg_header"
 
+
             app:popupTheme="@style/AppTheme.PopupOverlay"
             android:foregroundGravity="left">
-                <tqmgpartners.com.chivastv.Utils.MyTextview
+                <tqmgpartners.com.chivastv.Utils.MyTitleTextView
                     android:background="@color/btnRED"
                     android:id="@+id/tv_title_toolbar"
                     android:layout_width="wrap_content"

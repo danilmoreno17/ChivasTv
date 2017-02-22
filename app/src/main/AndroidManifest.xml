@@ -24,10 +24,10 @@
         <activity
             android:name=".act_Login"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".act_Sipnosis"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".act_Services"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".act_Sipnosis"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".StreamActivity"></activity>
     </application>
 
 </manifest>

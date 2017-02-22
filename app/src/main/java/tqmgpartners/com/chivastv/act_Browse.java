@@ -14,6 +14,8 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 import tqmgpartners.com.chivastv.fragments.frg_Home;
 import tqmgpartners.com.chivastv.fragments.frg_OnDemand;
@@ -57,8 +59,10 @@ public class act_Browse
                     // Handle the camera action
                 }else if(id == R.id.menu_seccion_2){
                     abrirFragmento("PPV");
-                }else{
+                }else if(id == R.id.menu_seccion_3){
                     abrirFragmento("Videos");
+                }else{
+                    abrirFragmento("Close");
                 }
 
                 DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -66,6 +70,29 @@ public class act_Browse
                 return true;
             }
         });
+        try{
+            TextView tv_homeToolbar = (TextView)findViewById(R.id.tv_homeToolbar);
+            TextView tv_PPVToolbar = (TextView)findViewById(R.id.tv_PPVToolbar);
+            TextView tv_videosToolbar = (TextView)findViewById(R.id.tv_videosToolbar);
+            tv_homeToolbar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    abrirFragmento("Home");
+                }
+            });
+            tv_PPVToolbar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    abrirFragmento("PPV");
+                }
+            });
+            tv_videosToolbar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    abrirFragmento("Videos");
+                }
+            });
+        }catch(Exception e){}
         frg_Home firstFragment = new frg_Home();
         // Add the fragment to the 'fragment_container' FrameLayout/
          getSupportFragmentManager().beginTransaction()
@@ -99,6 +126,11 @@ public class act_Browse
                     // Add the fragment to the 'fragment_container' FrameLayout
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.contentFrame, firstFragment).commit();
+                    break;
+                }
+                case "Close": {
+                    finish();
+                    System.exit(0);
                     break;
                 }
             }

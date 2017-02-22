@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_seccion_1"
+            android:title="PPV Eventos"/>
+        <item
+            android:id="@+id/menu_seccion_2"
+            android:title="Video Category 1"/>
+        <item
+            android:id="@+id/menu_seccion_3"
+            android:title="Video Category 2">
+        </item>
+        <item
+            android:id="@+id/menu_seccion_4"
+            android:title="Video Category 3"/>
+    </group>
+</menu>

@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tqmgpartners.com.chivastv.fragments.frg_Home">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                >
+                <tqmgpartners.com.chivastv.Utils.MyTitleTextView
+                    android:text="EVENTO 1"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:minLines="1"
+                    android:maxLines="2"
+                    android:visibility="visible"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/imPromoImage"
+                    android:layout_alignParentStart="true" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/p7895607_b1t_v5_aa"
+                    android:contentDescription="demo"
+                    android:layout_centerInParent="false"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:scaleType="fitCenter"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+                <tqmgpartners.com.chivastv.Utils.MyTitleTextView
+                    android:text="Video"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:minLines="1"
+                    android:maxLines="2"
+                    android:visibility="visible"
+                    android:layout_height="40dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/imPromoImage"
+                    android:layout_alignParentStart="true" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/cars2_1"
+                    android:contentDescription="demo"
+                    android:layout_centerInParent="false"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:scaleType="fitCenter"
+                    android:layout_height="300dp"
+                    android:layout_alignParentLeft="true" />
+                <tqmgpartners.com.chivastv.Utils.MyTitleTextView
+                    android:text="Video"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:minLines="1"
+                    android:maxLines="2"
+                    android:visibility="visible"
+                    android:layout_height="40dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/imPromoImage"
+                    android:layout_alignParentStart="true" />
+                <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/landimages"
+            android:contentDescription="demo"
+            android:layout_centerInParent="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitCenter"
+            android:layout_height="300dp"
+            android:layout_alignParentLeft="true" />
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
+

@@ -16,7 +16,6 @@
     <color name="btnRED">#ff4338</color>
     <color name="btnBLUE">#002856</color>
     <color name="btnGREEN">#39b54a</color>
-
     <color name="transparent">#00000000</color>
     <color name="white">#FFFFFF</color>
 </resources>

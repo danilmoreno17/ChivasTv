@@ -28,7 +28,7 @@ public class MyTextview extends TextView {
 
     private void init() {
         Typeface tf = Typeface.createFromAsset(getContext().getAssets(),
-                "fonts/HelveticaNeueLTStd Lt.ttf");
+                "fonts/hvt_light.ttf");
         setTypeface(tf);
     }
 }

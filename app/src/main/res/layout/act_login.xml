@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="0dp"
-    android:background="@color/BG_Blue"
+    android:background="@drawable/bg_img"
     android:orientation="vertical"
     android:gravity="center"
     tools:context="tqmgpartners.com.chivastv.act_Login">
-    <tqmgpartners.com.chivastv.Utils.MyTextview
+    <tqmgpartners.com.chivastv.Utils.MyTitleTextView
         android:id="@+id/tv_logoChivas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,38 +17,38 @@
         android:gravity="center"
         android:textStyle="italic"
         android:text="@string/App_Name"
-        android:textSize="60dp"/>
+        android:textSize="70dp"/>
     <EditText
         android:id="@+id/et_email"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/textview_selector"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="40dp"
         android:hint="@string/strEmail"
         android:textAlignment="center"/>
     <EditText
         android:id="@+id/et_password"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/textview_selector"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="40dp"
         android:hint="@string/strPassword"
         android:textAlignment="center"/>
     <tqmgpartners.com.chivastv.Utils.MyButton
         android:background="@drawable/button_selector"
         android:id="@+id/btn_Login"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginBottom="60dp"
         android:layout_width="match_parent"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:text="@string/strLogin"
-        android:layout_height="60dp" />
+        android:layout_height="40dp" />
     <tqmgpartners.com.chivastv.Utils.MyTextview
         android:id="@+id/tv_singUp"
         android:layout_width="match_parent"

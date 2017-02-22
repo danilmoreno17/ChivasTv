@@ -29,16 +29,9 @@ public class act_Login extends AppCompatActivity {
                 ((ChivasTv)getApplication()).strToken="1234";
                 Intent intent = new Intent(v.getContext(), act_Browse.class);
                 startActivity(intent);
+                finish();
             }
         });
-        //SetFonts();
-    }
-    private void SetFonts(){
-        Typeface miPropiaTypeFace = Typeface.createFromAsset(getAssets(), "fonts/HelveticaNeueLTStd Lt.ttf");
-        tv_logoChivas.setTypeface(miPropiaTypeFace);
-        tv_signUp.setTypeface(miPropiaTypeFace);
-        et_email.setTypeface(miPropiaTypeFace);
-        et_password.setTypeface(miPropiaTypeFace);
-        btn_login.setTypeface(miPropiaTypeFace);
+
     }
 }

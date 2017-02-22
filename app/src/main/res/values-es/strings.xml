@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ChivasTv</string>
+    <string name="App_Name">CHIVASTV</string>
+    <string name="navigation_drawer_close">Cerrar</string>
+    <string name="navigation_drawer_open">Abrir</string>
+    <string name="strDefault">Por Defecto</string>
+    <string name="strEmail">Correo Electronico</string>
+    <string name="strHome">Inicio</string>
+    <string name="strLogin">Iniciar Sesion</string>
+    <string name="strPPV">PPV</string>
+    <string name="strPassword">Contraseña</string>
+    <string name="strPurchaseDialog1">Para comprar este evento \nvaya a</string>
+    <string name="strPurchaseDialog2">PPV1 $1.25 MXN \n*PPV1 y PPV2 $1.55 MXN \n*Todos los juegos $1.75 MXN mensualmente</string>
+    <string name="strRelatedVideos">Videos Relacionados</string>
+    <string name="strSignUp">No eres miembro? Registrate ahora</string>
+    <string name="strVideos">Videos</string>
+    <string name="strWatch">Ver</string>
+</resources>

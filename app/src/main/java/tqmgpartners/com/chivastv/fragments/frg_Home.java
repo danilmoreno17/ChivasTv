@@ -107,3 +107,4 @@ public class frg_Home extends Fragment {
         void onFragmentInteraction(Uri uri);
     }
 }
+//imageview lanscape android:layout_width="285dp"

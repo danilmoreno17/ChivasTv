@@ -62,6 +62,7 @@ public class adaPPVAdapter extends RecyclerView.Adapter<adaPPVAdapter.MyViewHold
                 }
 
             });
+            holder._tags.setImageResource(R.drawable.ic_comprado);
 
         }catch (Exception e) {
             e.printStackTrace();
@@ -82,11 +83,11 @@ public class adaPPVAdapter extends RecyclerView.Adapter<adaPPVAdapter.MyViewHold
 
         private TextView _txtTitle;
         private ImageView _imgBillboard;
-
+        private ImageView _tags;
 
         public MyViewHolder(View view){
             super(view);
-
+            _tags = (ImageView)view.findViewById(R.id.iv_tags);
             _txtTitle = (TextView)view.findViewById(R.id.categories);
             _imgBillboard = (ImageView)view.findViewById((R.id.billboard));
 
